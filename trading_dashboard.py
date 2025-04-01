@@ -14,7 +14,7 @@ def get_connection():
         user=st.secrets["user"],
         password=st.secrets["password"],
         database=st.secrets["database"],
-        ssl_ca="cacert.pem"
+        ssl_ca="cacert.pem"  # this is supported by PlanetScale
     )
 
 conn = get_connection()
