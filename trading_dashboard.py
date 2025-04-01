@@ -14,7 +14,7 @@ def get_connection():
         user=st.secrets["user"],
         password=st.secrets["password"],
         database=st.secrets["database"],
-        ssl_mode="REQUIRED"  # OR ssl_ca="cacert.pem" if you're using a cert
+        ssl_ca="cacert.pem"
     )
 
 conn = get_connection()
